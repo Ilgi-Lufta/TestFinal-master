@@ -32,7 +32,7 @@ public class HomeController : Controller
         }
         int id = (int)HttpContext.Session.GetInt32("userId");
         User useriLoguar =_context.Users.FirstOrDefault(e => e.UserId == id);
-
+    ViewBag.id = id;
         ViewBag.iLoguari = useriLoguar;
 
                     ViewBag.Allusers = _context.Users
@@ -59,8 +59,8 @@ public class HomeController : Controller
                                                     .ThenInclude(e=>e.UseriQekomenton).ThenInclude(e=>e.RequestsReciver)
                                                     .OrderByDescending(e=>e.CreatedAt)
                                                     
-                                                    .Where(e=>(e.Creator.RequestsSender.Where(e=> e.Accepted==true ).Any(e => e.ReciverId == id) == true) 
-                                                    || (e.Creator.RequestsReciver.Where(e=> e.Accepted==true).Any(e => e.SenderId == id) == true) 
+                                                    .Where(e=>(e.Creator.RequestsSender.Where(e=> e.Accepted==true ).Any(e => e.ReciverId == id) == false ) 
+                                                    || (e.Creator.RequestsReciver.Where(e=> e.Accepted==true).Any(e => e.SenderId == id) == false ) 
                                                     || e.Creator.UserId == id  )                                                
                                                     .ToList();
 

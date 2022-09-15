@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B4rX1G9KMdcL2MJ4Ds5tc5rnj0+qPbPKGgtU9H/RYhY=",
+  "Hash": "oKoukRLrLI29h2pce2DESllcaZLVW3UHSC/iU8SKRkM=",
   "Source": "TestFinal",
   "BasePath": "_content/TestFinal",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\79704040-f3d0-4fda-bbf0-8ddd33b70084-e557ce34-a4c9-476f-9a7c-2c01f15076e5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\7e338c8e-9d99-4599-8acc-63102ba8a5f8-vila-ferdinand-02.jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/7e338c8e-9d99-4599-8acc-63102ba8a5f8-vila-ferdinand-02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\7e338c8e-9d99-4599-8acc-63102ba8a5f8-vila-ferdinand-02.jpg"
     },
     {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\81021219-cd5d-49cd-96ec-1391a515f0d4-vila-ferdinand-02.jpg",
