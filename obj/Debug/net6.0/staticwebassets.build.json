@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zlWjQzrH+vRxt61kl4vViVRtyufgPLHtNWFJS2UoJn0=",
+  "Hash": "aw9sbBLXKVai0pyMxucD6U6nnXVdnqqthZ+MsXYuXFU=",
   "Source": "TestFinal",
   "BasePath": "_content/TestFinal",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\0834cba0-0990-46f6-90a6-599ef5449f68-gettyimages-693134468.jpg"
     },
     {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\1c2aa626-6541-4cc2-be8f-8dc5e620b48d-download.jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/1c2aa626-6541-4cc2-be8f-8dc5e620b48d-download.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\1c2aa626-6541-4cc2-be8f-8dc5e620b48d-download.jpg"
+    },
+    {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\1e613b2a-5b36-45fc-9bad-38ca5d141edd-d8c2dc2e-a45c-43f7-aa4b-9f7cfac31664.jpg",
       "SourceId": "TestFinal",
       "SourceType": "Discovered",
@@ -219,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\396140ca-693c-41c0-85fa-8f89a1dd46db-download.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\3abfdae4-7786-4c14-a9f9-1a5348f138a0-download (1).jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/3abfdae4-7786-4c14-a9f9-1a5348f138a0-download (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\3abfdae4-7786-4c14-a9f9-1a5348f138a0-download (1).jpg"
     },
     {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\3b61c069-f418-486d-ba7b-b68a3ef04401-Screen_Shot_2019_12_15_at_11.05.17_PM.0.jpg",
@@ -423,6 +457,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\81021219-cd5d-49cd-96ec-1391a515f0d4-vila-ferdinand-02.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\85402d20-868c-4fa4-a734-e9bced18ccf0-vila-ferdinand-02.jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/85402d20-868c-4fa4-a734-e9bced18ccf0-vila-ferdinand-02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\85402d20-868c-4fa4-a734-e9bced18ccf0-vila-ferdinand-02.jpg"
     },
     {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\8d66b168-c746-4822-9319-3a0d4cac7bbe-e557ce34-a4c9-476f-9a7c-2c01f15076e5.jpg",
@@ -780,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\fbb2f726-9c67-41f6-b9f6-5457a778bffa-mercedes-amgs-lewis-hamilton-at-the-2015-formula-one-united-states-grand-prix_100531705_h.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\fc429009-14d8-44f9-b0fa-d6cf1ea249d5-download (2).jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/fc429009-14d8-44f9-b0fa-d6cf1ea249d5-download (2).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\fc429009-14d8-44f9-b0fa-d6cf1ea249d5-download (2).jpg"
     },
     {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\js\\site.js",

@@ -33,14 +33,7 @@ public class User
 
     public List<Post> CreatedPost { get; set; } = new List<Post>(); 
 
-    // public List<Movie> CreatedMovies { get; set; } = new List<Movie>(); 
-    // public List<Fans> FilmaQePelqej { get; set; } = new List<Fans>(); 
-    // public List<Like> Liked { get; set; } = new List<Like>(); 
-    // Will not be mapped to your users table!
-    
       public string Myimage { get; set; } = string.Empty;
-
-
 
     [NotMapped]
     [Compare("Password")]
@@ -55,6 +48,7 @@ public class LoginUser
     [Required]
     public string UserName { get; set; }
     [Required]
+    [DataType(DataType.Password)]
     public string Password { get; set; }
 }
 

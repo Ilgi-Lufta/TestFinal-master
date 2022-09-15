@@ -16343,11 +16343,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\35569\\Desktop\\TestFinal-master\\Views\\Home\\FansAdd.Cshtml",
-      "TargetPath": "Views\\Home\\FansAdd.Cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\35569\\Desktop\\TestFinal-master\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
