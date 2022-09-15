@@ -1,0 +1,262 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center row">
+
+    
+    <div class="row mb-4">
+        <div class="col-sm-2 offset-sm-2">
+            <img src="~/Images/@ViewBag.iLoguari.Myimage" class="rounded-circle" width="100px" height="100px"  asp-append-version="true" alt="">
+        </div>
+        <div class="col-sm-4">
+           <h1 class="display-4">Welcome @ViewBag.iLoguari.FirstName</h1> 
+        </div>
+        <div class="col-sm-3 offset-sm-1">
+        @* <a href="/Movie/Add" class="btn btn-primary col-sm-3">Add</a> *@
+        <a asp-action="Profilepicadd" class="btn btn-primary ">Add profile photo</a>
+        <a href="/logout" class="btn btn-danger ">Logout</a>
+        
+    </div>
+                
+            </div>
+    
+</div>
+
+@* Suggested friends *@
+
+<div class="row">
+    <div class="col-sm-3">
+        <table class="table">
+            <h3>Suggested Friends</h3>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in ViewBag.Allusers)
+                {
+                     <tr>
+                        
+                            <td>
+                       <img src="~/Images/@item.Myimage" class="rounded-circle" width="50px" height="50px"  asp-append-version="true" alt="">
+                                
+                                @item.FirstName </td>
+                        <td><a href="/SendR/@item.UserId">Send Request</a></td> 
+                       
+                        </tr>
+                }
+
+              
+  
+            </tbody>
+        </table>
+    </div>
+
+    @* <div class="row"> *@
+    <div class="col-sm-3">
+        <table class="table">
+            <h3>Unfriend</h3>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in ViewBag.friends)
+                {
+                     <tr>
+                         @if(item.Sender.UserId == ViewBag.iLoguari.UserId){
+                            <td>
+                       <img src="~/Images/@item.Reciver.Myimage" class="rounded-circle" width="50px" height="50px"  asp-append-version="true" alt="">
+                        
+                                @item.Reciver.FirstName </td>
+                         }else{
+
+                            <td>
+                       <img src="~/Images/@item.Sender.Myimage" class="rounded-circle" width="50px" height="50px"  asp-append-version="true" alt="">
+                                
+                                @item.Sender.FirstName </td>
+                         }
+                            
+                        <td><a href="/RemoveF/@item.RequestId" class="btn btn-danger"> Unfriend </a></td> 
+                       
+                        </tr>
+                }
+
+   
+
+           </tbody>
+        </table>
+    </div>
+
+    @* Friends *@
+    <div class="col-sm-3">
+        <h3>Friends Requests</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+ 
+                @foreach (var item in ViewBag.request )
+                {
+                     <tr>
+                            <td>
+                       <img src="~/Images/@item.Sender.Myimage" class="rounded-circle" width="50px" height="50px"  asp-append-version="true" alt="">
+                                @item.Sender.FirstName 
+                                </td>
+                        <td><a href="/AcceptR/@item.RequestId" class=" btn btn-primary">Accept </a>
+                            <a href="/DeclineR/@item.RequestId" class="btn btn-danger"> Decline </a>
+                        </td>
+                    </tr>
+                }
+
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="col  sm-3">
+ <form asp-controller="Home" asp-action="Index">
+    <p>
+        <input type="text" name="SearchString" />
+        <input class="btn btn-primary" type="submit" value="search" />
+    </p>
+</form>
+
+@foreach (var item in ViewBag.searchfrineds )
+                    {
+                        <div class="row mt-4 mb-3">
+                            <div class="col-sm-6">
+                               <img src="~/Images/@item.Myimage" class="rounded-circle" width="50px" height="50px"  asp-append-version="true" alt="">
+                        @item.FirstName  
+                            </div>
+                            <div class="col-sm-6">
+                                @if(item.UserId != @ViewBag.iLoguari.UserId){
+                                    <a href="/SendR/@item.UserId"> Send Request</a>
+                                }
+                        
+                                
+                            </div>
+                         
+                        </div>
+                         
+                    }
+    </div>
+<div class="row">
+<div class="d-flex justify-content-center ">
+    <h4 class="p-1">Shto nje post te ri </h4> 
+    <a class=" btn btn-primary" asp-action="PostAdd" asp-controller="Home" asp-route-id="@ViewBag.iLoguari.UserId"> shto post </a>
+</div>
+</div>
+
+@* Posts *@
+
+<div class="row">
+    <div class="col-sm-6  offset-sm-3   text-left ">
+
+        @foreach (var item in ViewBag.posts)
+        {
+            bool ilgi= false;
+            <div class=" p-3 border rounded mb-3 mt-3">
+            <div class="row  d-flex align-items-end">
+                 <div class="d-flex row align-items-end col-sm-4">
+                    <div class="col-sm-2">
+
+                    <img src="~/Images/@item.Creator.Myimage" class="rounded-circle " width="50px" height="50px"  asp-append-version="true" alt="">
+                    </div>
+                    <div class=" offset-sm-2 col-sm-2">
+
+                         <h3 >@item.Creator.FirstName</h3>
+                    </div>
+                 </div>
+            </div>
+            <p>@item.Description </p>
+            <div class="row">
+                <img src="~/Images/@item.Myimage"  asp-append-version="true" alt="">
+            </div>
+            
+            <div class="row mt-5 d-flex align-items-end">
+                <div class="col-sm-3">
+                    <p>@item.CreatedAt.ToString("HH:mm , dd MMMM")</p>   
+                    <p> @item.Likes.Count likes</p>
+                    
+                    @foreach (var item2 in item.Likes)
+                    {
+                        @if((item2.UserId == ViewBag.iLoguari.UserId) && (item2.PostId == item.PostId)){
+                            ilgi = true;
+                        }
+                    }
+                    @if (ilgi)
+                    {
+                 <a class="btn btn-primary " asp-action="UnLike" asp-controller="Home" asp-route-id="@ViewBag.iLoguari.UserId" asp-route-id2="@item.PostId"> Un Like </a>
+                        
+                    }else{
+
+                    <a class="btn btn-primary " asp-action="Like" asp-controller="Home" asp-route-id="@ViewBag.iLoguari.UserId" asp-route-id2="@item.PostId"> Like </a>
+
+                    }
+
+
+                </div>
+                <div class="col-sm-9">
+                     <form class=""  asp-controller="Home" asp-action="CommentCreate" asp-route-id="@ViewBag.iLoguari.UserId" asp-route-id2="@item.PostId" method="post">
+                                     
+                <div class="form-group">
+                   
+                    <input type="text" class="form-control" placeholder="Add a Comment" for="content" name="content">
+                </div>               
+                <button type="submit" class="btn btn-primary mt-3 btn-lg">Comment</button>
+            </form>
+                </div>
+             
+            
+            </div>
+              
+            </div>
+            <div>
+                @if(item.Comments.Count !=0){
+<h3>Komentet</h3>
+                    @foreach (var item2 in item.Comments)
+                {
+                    <div class="border p-3 rounded border-primary mt-2 ">
+                        <div class="d-flex row align-items-end col-sm-4">
+                            <div class="col-sm-2">
+
+                                   <img src="~/Images/@item2.UseriQekomenton.Myimage" class="rounded-circle mr-3" width="50px" height="50px"  asp-append-version="true" alt="">
+                            </div>
+                            <div class=" offset-sm-2 col-sm-2">
+
+                         <h3 class="ml-3">@item2.UseriQekomenton.FirstName</h3>
+                            </div>
+                        </div>
+                   <p>@item2.content </p>
+                    </div>
+                    
+                }
+
+                }
+            </div>
+
+        }
+    </div>
+    
+    </div>
+</div>
