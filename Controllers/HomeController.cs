@@ -31,8 +31,9 @@ public class HomeController : Controller
             return RedirectToAction("Register");
         }
         int id = (int)HttpContext.Session.GetInt32("userId");
+        User useriLoguar =_context.Users.FirstOrDefault(e => e.UserId == id);
 
-        ViewBag.iLoguari = _context.Users.FirstOrDefault(e => e.UserId == id);
+        ViewBag.iLoguari = useriLoguar;
 
                     ViewBag.Allusers = _context.Users
                         .Include(e => e.RequestsReciver)
@@ -56,7 +57,11 @@ public class HomeController : Controller
 
                     ViewBag.posts = _context.Posts.Include(e => e.Creator).Include(e=>e.Likes).Include(e=>e.Comments)
                                                     .ThenInclude(e=>e.UseriQekomenton).ThenInclude(e=>e.RequestsReciver)
-                                                    .OrderByDescending(e=>e.CreatedAt)                                                
+                                                    .OrderByDescending(e=>e.CreatedAt)
+                                                    
+                                                    .Where(e=>(e.Creator.RequestsSender.Where(e=> e.Accepted==true ).Any(e => e.ReciverId == id) == true) 
+                                                    || (e.Creator.RequestsReciver.Where(e=> e.Accepted==true).Any(e => e.SenderId == id) == true) 
+                                                    || e.Creator.UserId == id  )                                                
                                                     .ToList();
 
                                                  

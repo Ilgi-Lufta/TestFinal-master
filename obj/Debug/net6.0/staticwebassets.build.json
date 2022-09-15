@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aw9sbBLXKVai0pyMxucD6U6nnXVdnqqthZ+MsXYuXFU=",
+  "Hash": "B4rX1G9KMdcL2MJ4Ds5tc5rnj0+qPbPKGgtU9H/RYhY=",
   "Source": "TestFinal",
   "BasePath": "_content/TestFinal",
   "Mode": "Default",
@@ -576,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\a6c76887-d4fb-4998-ba50-fd1c652d0082-e557ce34-a4c9-476f-9a7c-2c01f15076e5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\b6fac471-45de-46d6-82cc-f41b27855c59-gettyimages-693134468.jpg",
+      "SourceId": "TestFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\",
+      "BasePath": "_content/TestFinal",
+      "RelativePath": "Images/b6fac471-45de-46d6-82cc-f41b27855c59-gettyimages-693134468.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\b6fac471-45de-46d6-82cc-f41b27855c59-gettyimages-693134468.jpg"
     },
     {
       "Identity": "C:\\Users\\35569\\Desktop\\TestFinal-master\\wwwroot\\Images\\b7ea415f-77e1-4fa1-b9a8-f5b0b4d1d637-jason-statham-medium.jpg",
